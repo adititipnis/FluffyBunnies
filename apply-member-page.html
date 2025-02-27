@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Membership - Luxury Travel Concierge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: transparent;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 10;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .apply-container {
+            display: flex;
+            min-height: calc(100vh - 80px);
+        }
+        
+        .apply-image {
+            flex: 1;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1080/1920');
+            background-size: cover;
+            background-position: center;
+            display: none;
+        }
+        
+        .apply-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .apply-box {
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            color: #d3d3d3;
+            letter-spacing: 1px;
+        }
+        
+        .email-info {
+            margin: 2.5rem 0;
+            padding: 2rem;
+            border: 1px solid #333;
+        }
+        
+        .email-label {
+            font-size: 1rem;
+            color: #999;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .email-address {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            margin-top: 1rem;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .back-home {
+            margin-top: 3rem;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-home:hover {
+            color: #fff;
+        }
+        
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            background-color: transparent;
+            color: #666;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-top: auto;
+        }
+        
+        @media (min-width: 768px) {
+            .apply-image {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            header {
+                padding: 1.5rem;
+            }
+            
+            .email-address {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">CHÉVOY</a>
+    </header>
+    
+    <div class="apply-container">
+        <div class="apply-image"></div>
+        <div class="apply-content">
+            <div class="apply-box">
+                <h1>APPLY FOR MEMBERSHIP</h1>
+                <p class="description">Our exclusive membership provides access to bespoke travel experiences, personalized itineraries, and privileged access to the world's most coveted destinations. To apply for membership, please send an email to:</p>
+                
+                <div class="email-info">
+                    <p class="email-label">CONTACT</p>
+                    <p class="email-address">membership@chevoy.com</p>
+                </div>
+                
+                <p class="description">Include your name, contact information, and a brief description of your travel preferences. Our team will review your application and contact you within 48 hours.</p>
+                
+                <a href="mailto:membership@chevoy.com" class="btn">SEND EMAIL</a>
+                <br>
+                <a href="luxury-travel-concierge.html" class="back-home">Return to Homepage</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2025 Chévoy. All rights reserved.
+    </footer>
+</body>
+</html>

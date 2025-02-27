@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Travel Concierge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: transparent;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .btn {
+            padding: 0.7rem 1.5rem;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            letter-spacing: 3px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+            letter-spacing: 1px;
+            line-height: 1.6;
+            color: #d3d3d3;
+        }
+        
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            background-color: transparent;
+            color: #666;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-top: auto;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content {
+                padding: 0 1rem;
+            }
+            
+            header {
+                padding: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-buttons {
+                gap: 0.8rem;
+            }
+            
+            .btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="luxury-travel-concierge.html" class="logo">CHÉVOY</a>
+        <div class="nav-buttons">
+            <a href="member-login-page.html" class="btn">MEMBER LOGIN</a>
+            <a href="apply-member-page.html" class="btn">APPLY</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CHÉVOY</h1>
+            <p class="tagline">Exclusive. Effortless. Elite.</p>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2025 Chévoy. All rights reserved.
+    </footer>
+    
+    <script>
+        // This space is available for any future interactive elements
+    </script>
+</body>
+</html>
